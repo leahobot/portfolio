@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
 import WhatIDo from "./components/WhatIDo";
+import Footer from "./components/Footer";
 import "./App.css";
 import "animate.css";
 
@@ -20,6 +21,7 @@ function App() {
 			<Portfolio />
 			<Resume />
 			<Contact />
+			<Footer />
 		</div>
 	);
 }

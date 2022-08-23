@@ -1,7 +1,7 @@
-import {useCallback} from "react";
-import React from "react";
+import React, {useCallback} from "react";
 import Particles from "react-particles";
 import {loadFull} from "tsparticles";
+import {Link} from "react-scroll";
 import Typewriter from "typewriter-effect";
 import {BiChevronDown} from "react-icons/bi";
 
@@ -9,6 +9,8 @@ function Home() {
 	const particlesInit = useCallback(async (engine) => {
 		await loadFull(engine);
 	}, []);
+
+	const particlesLoaded = useCallback((container) => {}, []);
 
 	return (
 		<section className='hero-page' id='home'>
@@ -41,20 +43,34 @@ function Home() {
 					/>
 				</div>
 				<p className='hero-body'>based in Lagos, Nigeria</p>
-				<a href='/' className='btn btn-outlined'>
+				<Link
+					className='btn btn-outlined'
+					to='contact'
+					spy={true}
+					smooth={true}
+					offset={-10}
+					duration={800}>
 					Contact Me
-				</a>
-				<a href='/' className='arrow-down'>
+				</Link>
+
+				<Link
+					className='arrow-down'
+					to='about'
+					spy={true}
+					smooth={true}
+					offset={0}
+					duration={500}>
 					<BiChevronDown
 						size={35}
 						className='animate__animated animate__fadeInDown animate__slow animate__infinite'
 					/>
-				</a>
+				</Link>
 			</main>
 
 			<Particles
 				id='tsparticles'
 				init={particlesInit}
+				loaded={particlesLoaded}
 				options={{
 					background: {
 						color: {
@@ -80,7 +96,7 @@ function Home() {
 							},
 							repulse: {
 								distance: 70,
-								duration: 0.4,
+								duration: 0.5,
 							},
 						},
 					},
@@ -90,10 +106,10 @@ function Home() {
 						},
 						links: {
 							color: "#DCE0E1",
-							distance: 200,
+							distance: 120,
 							enable: true,
 							opacity: 0.65,
-							width: 0.5,
+							width: 1,
 						},
 						collisions: {
 							enable: true,
@@ -105,7 +121,7 @@ function Home() {
 								default: "bounce",
 							},
 							random: false,
-							speed: 1.7,
+							speed: 1.3,
 							straight: false,
 						},
 						number: {
@@ -125,7 +141,7 @@ function Home() {
 							value: {min: 0, max: 3},
 						},
 					},
-					detectRetina: true,
+					detectRetina: false,
 					fullScreen: false,
 				}}
 			/>

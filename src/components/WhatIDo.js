@@ -8,7 +8,7 @@ function WhatIDo() {
 
 	useEffect(() => {
 		const animation = () => {
-			if (window.scrollY >= 1350) {
+			if (window.scrollY >= 1400) {
 				setAnimatePage(true);
 			} else {
 				setAnimatePage(false);
@@ -48,28 +48,30 @@ function WhatIDo() {
 
 	return (
 		<section className='whatIDo' id='whatIDo'>
-			<header className='what-header'>
-				<p className='what-title'>What I Do</p>
-				<span>What I do so</span>
-			</header>
+			<div className='what-width'>
+				<header className='what-header'>
+					<p className='what-title'>What I Do</p>
+					<span>What I do so</span>
+				</header>
 
-			<main className='services'>
-				{services.map((service, id) => (
-					<div
-						key={id}
-						className={
-							animatePage
-								? "services-details animate__animated animate__fadeInUp"
-								: "services-details"
-						}>
-						<span className='services-icon'>{service.icon}</span>
-						<div className='services-content'>
-							<p className='services-title'>{service.title}</p>
-							<p>{service.body}</p>
+				<main className='services'>
+					{services.map((service, id) => (
+						<div
+							key={id}
+							className={
+								animatePage
+									? "services-details animate__animated animate__fadeInUp"
+									: "services-details"
+							}>
+							<span className='services-icon'>{service.icon}</span>
+							<div className='services-content'>
+								<p className='services-title'>{service.title}</p>
+								<p>{service.body}</p>
+							</div>
 						</div>
-					</div>
-				))}
-			</main>
+					))}
+				</main>
+			</div>
 		</section>
 	);
 }
