@@ -52,7 +52,7 @@ function Nav() {
 								to='about'
 								spy={true}
 								smooth={true}
-								offset={30}
+								offset={0}
 								duration={800}>
 								About
 							</Link>
@@ -63,7 +63,7 @@ function Nav() {
 								to='whatIDo'
 								spy={true}
 								smooth={true}
-								offset={30}
+								offset={0}
 								duration={800}>
 								What I Do
 							</Link>
@@ -74,7 +74,7 @@ function Nav() {
 								to='portfolio'
 								spy={true}
 								smooth={true}
-								offset={30}
+								offset={0}
 								duration={800}>
 								Portfolio
 							</Link>
@@ -85,7 +85,7 @@ function Nav() {
 								to='resume'
 								spy={true}
 								smooth={true}
-								offset={30}
+								offset={0}
 								duration={800}>
 								Resume
 							</Link>
@@ -96,7 +96,7 @@ function Nav() {
 								to='contact'
 								spy={true}
 								smooth={true}
-								offset={30}
+								offset={0}
 								duration={800}>
 								Contact
 							</Link>

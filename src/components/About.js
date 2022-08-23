@@ -6,7 +6,7 @@ function About() {
 
 	useEffect(() => {
 		const animation = () => {
-			if (window.scrollY >= 800) {
+			if (window.scrollY >= 900) {
 				setAnimatePage(true);
 			} else {
 				setAnimatePage(false);
@@ -35,55 +35,57 @@ function About() {
 
 	return (
 		<section className='about-page' id='about'>
-			<header className='about-header'>
-				<p className='about-title'>Know Me More</p>
-				<span>Know Me More so</span>
-			</header>
-			<main>
-				<article className='about-info'>
-					<p className='about-info-heading'>
-						Hi, I'm <span className='active'>Leah,</span> a Full Stack Web
-						Developer
-					</p>
-					<p className='about-info-body'>
-						based in Lagos, Nigeria. I am very passionate about developing
-						innovative software solutions that expedite the efficiency and
-						effectiveness of the success of an organization. I'm well-versed in
-						web technology and writing software codes to create systems that are
-						reliable and user-friendly.
-						<br />
-						<br />
-						I'm a confident communicator, strategic thinker, and highly
-						innovative in developing softwares that are customized to meet your
-						company's organizational needs and further your success.
-					</p>
-				</article>
-				<div className='about-photo'>
-					<img src={image} alt='A Photograph' />
-				</div>
-			</main>
-			<aside className='about-skills'>
-				<header>My Skills</header>
-				<div className='skills'>
-					{skills.map((skill, id) => (
-						<div
-							key={id}
-							className={
-								animatePage
-									? "skills-details animate__animated animate__slideInLeft  animate__slow"
-									: "skills-details"
-							}>
-							<div className='skills-desc'>
-								<p>{skill.skillName}</p>
-								<span>{skill.percentage}</span>
+			<div className='max-width'>
+				<header className='about-header'>
+					<p className='about-title'>Know Me More</p>
+					<span>Know Me More so</span>
+				</header>
+				<main>
+					<article className='about-info'>
+						<p className='about-info-heading'>
+							Hi, I'm <span className='active'>Leah,</span> a Full Stack Web
+							Developer
+						</p>
+						<p className='about-info-body'>
+							based in Lagos, Nigeria. I am very passionate about developing
+							innovative software solutions that expedite the efficiency and
+							effectiveness of the success of an organization. I'm well-versed
+							in web technology and writing software codes to create systems
+							that are reliable and user-friendly.
+							<br />
+							<br />
+							I'm a confident communicator, strategic thinker, and highly
+							innovative in developing softwares that are customized to meet
+							your company's organizational needs and further your success.
+						</p>
+					</article>
+					<div className='about-photo'>
+						<img src={image} alt='A Photograph' />
+					</div>
+				</main>
+				<aside className='about-skills'>
+					<header>My Skills</header>
+					<div className='skills'>
+						{skills.map((skill, id) => (
+							<div
+								key={id}
+								className={
+									animatePage
+										? "skills-details animate__animated animate__slideInLeft  animate__slow"
+										: "skills-details"
+								}>
+								<div className='skills-desc'>
+									<p>{skill.skillName}</p>
+									<span>{skill.percentage}</span>
+								</div>
+								<div>
+									<progress value={skill.value} max='100' />
+								</div>
 							</div>
-							<div>
-								<progress value={skill.value} max='100' />
-							</div>
-						</div>
-					))}
-				</div>
-			</aside>
+						))}
+					</div>
+				</aside>
+			</div>
 		</section>
 	);
 }

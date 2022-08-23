@@ -7,7 +7,7 @@ import typing from "../images/typing master.JPG";
 
 function Portfolio() {
 	return (
-		<section className='portfolio-page' id='portfolio'>
+		<section className='max-width portfolio-page' id='portfolio'>
 			<header className='portfolio-header'>
 				<p className='portfolio-title'>A Few of My Work</p>
 				<span>portfolioooooooooooooooo</span>

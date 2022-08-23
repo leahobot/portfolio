@@ -48,10 +48,10 @@ function WhatIDo() {
 
 	return (
 		<section className='whatIDo' id='whatIDo'>
-			<div className='what-width'>
+			<div className='max-width'>
 				<header className='what-header'>
 					<p className='what-title'>What I Do</p>
-					<span>What I do so</span>
+					<span>What I do sooooo</span>
 				</header>
 
 				<main className='services'>

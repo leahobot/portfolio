@@ -4,7 +4,7 @@ import {MdLocationOn, MdEmail} from "react-icons/md";
 function Contact() {
 	return (
 		<section className='contact'>
-			<div className='contact-page'>
+			<div className='max-width'>
 				<header className='contact-header'>
 					<p className='contact-title'>Get in Touch</p>
 					<span>get in touchhhhhh</span>

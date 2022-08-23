@@ -38,6 +38,7 @@
 .nav-bar img{
   height: 4.5rem;
   padding-top: 0.6rem;
+  cursor: pointer;
 }
 
 .nav-items,
@@ -83,6 +84,13 @@
   color:var(--accent-color);
 }
 
+.hero-page{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .hero-page::before{
   content:"";
   background-image: url(./images/hero.jpg);
@@ -95,13 +103,6 @@
   height: 100%;
   z-index: -1;
   left: 0;
-}
-
-.hero-page{
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .hero-content{
@@ -162,6 +163,8 @@
 }
 
 .arrow-down{
+  z-index: 1;
+  cursor: pointer;
   color: var(--primary-color);
 }
 
@@ -172,22 +175,32 @@
   height: 100%;
 }
 
-.about-page{
+.about-page,
+.whatIDo,
+.portfolio-page{
+  padding: 5rem 0 12rem 0;
+}
+
+.max-width{
   max-width: var(--width);
   margin: 0 auto;
 }
 
-.about-page .about-header{
+.about-page .about-header,
+.whatIDo .what-header,
+.portfolio-page .portfolio-header,
+.resume-page .resume-header,
+.contact .contact-header{
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding-top: 4rem;
 }
 
 .about-page .about-header::before{
     content:"ABOUT ME"; 
     position: absolute;
-    top: 7rem;
     font-size: 13rem;
     color: var(--light-gray-color);
     font-weight: 600;
@@ -195,17 +208,25 @@
     z-index: -1;
   }
   
-  .about-page .about-title{
+  .about-page .about-title,
+  .what-header .what-title,
+  .portfolio-page .portfolio-title,
+  .resume-header .resume-title,
+  .contact-header .contact-title{
     position: absolute;
-    top: 11rem;
+    top: 195%;
     font-size: 3.4rem;
     font-weight: 600;
     color: var(--secondary-color);
 }
 
-.about-header span{
+.about-header span,
+.what-header span,
+.portfolio-header span,
+.resume-header span,
+.contact-header span{
   position: absolute;
-  top: 18rem;
+  top: 365%;
   border-bottom: 3px solid var(--accent-color);
   color: transparent;
 }
@@ -213,7 +234,7 @@
 .about-page main{
   display: flex;
   justify-content: space-between;
-  margin-top: 27rem;
+  padding-top: 20rem;
   color: var(--secondary-color);
 }
 
@@ -266,7 +287,7 @@
 
 
 .about-skills{
-  margin: 8rem 0;
+  margin-top: 7rem;
 }
 
 .about-skills header{
@@ -328,49 +349,20 @@
   background-color: var(--section-color);
 }
 
-.what-width{
-  max-width: var(--width);
-  margin: 0 auto;
-}
-
-.what-header{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
 .what-header::before{
     content:"SERVICES"; 
     position: absolute;
-    top: 4rem;
     font-size: 13rem;
     color: var(--light-gray-color);
     font-weight: 600;
     opacity: 0.35;
     z-index: -1;
   }
-  
-.what-header .what-title{
-    position: absolute;
-    top: 7.5rem;
-    font-size: 3.4rem;
-    font-weight: 600;
-    color: var(--secondary-color);
-}
-
-.what-header span{
-  position: absolute;
-  top: 14.5rem;
-  border-bottom: 3px solid var(--accent-color);
-  color: transparent;
-}
 
 .whatIDo .services{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 25rem;
-  padding-bottom: 8rem;
+  padding-top: 20rem;
   gap: 2.5rem;
 }
 
@@ -402,52 +394,23 @@
   margin-top: 2.6rem;
 }
 
-.portfolio-page{
-  max-width: var(--width);
-  margin: 0 auto;
-}
-
-.portfolio-header{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
 .portfolio-header::before{
     content:"PORTFOLIO"; 
     position: absolute;
-    top: 4rem;
     font-size: 13rem;
     color: var(--light-gray-color);
     font-weight: 600;
     opacity: 0.35;
     z-index: -1;
   }
-  
-.portfolio-header .portfolio-title{
-    position: absolute;
-    top: 7.5rem;
-    font-size: 3.4rem;
-    font-weight: 600;
-    color: var(--secondary-color);
-}
 
-.portfolio-header span{
-  position: absolute;
-  top: 14.5rem;
-  border-bottom: 3px solid var(--accent-color);
-  color: transparent;
-}
-
-.portfolio-page .my-work-container{
+.my-work-container{
   display: grid;
   grid-template-areas: "work-1  work-2 work-3"
                         "work-4 work-2 work-5";
   margin-top: 24rem;
   place-items: center;
   gap: 3rem;
-  padding: 3rem 5rem;
 }
 
 .my-work-container .my-work{
@@ -536,46 +499,21 @@
 }
 
 .resume-page{
-  max-width: var(--width);
-  margin: 0 auto;
-  margin-bottom: 4rem;
-}
-
-.resume-header{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+  margin-top: -3rem;
 }
 
 .resume-header::before{
     content:"SUMMARY"; 
     position: absolute;
-    top: 4rem;
     font-size: 13rem;
     color: var(--light-gray-color);
     font-weight: 600;
     opacity: 0.35;
     z-index: -1;
   }
-  
-.resume-header .resume-title{
-    position: absolute;
-    top: 7.5rem;
-    font-size: 3.4rem;
-    font-weight: 600;
-    color: var(--secondary-color);
-}
-
-.resume-header span{
-  position: absolute;
-  top: 14.5rem;
-  border-bottom: 3px solid var(--accent-color);
-  color: transparent;
-}
 
 .resume-page .resume-container{
-  margin-top: 25rem;
+  margin-top: 17rem;
 }
 
 .resume-flex{
@@ -612,58 +550,30 @@
 }
 
 .resume-container header{
-  margin: 5rem 0 1rem 0;
+  padding: 5rem 0 1rem 0;
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--secondary-color);
 }
 
 .contact{
-  margin: 12rem 0 7rem 0;
-  padding-bottom: 5rem;
+  margin-top: 12rem;
+  padding: 2rem 0 6rem 0;
   background-color: var(--section-color);
-}
-
-.contact-page{
-  max-width: var(--width);
-  margin: 0 auto;
-}
-
-.contact-header{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
 }
 
 .contact-header::before{
     content:"CONTACT"; 
     position: absolute;
-    top: 4rem;
     font-size: 13rem;
     color: var(--light-gray-color);
     font-weight: 600;
     opacity: 0.35;
     z-index: -1;
   }
-  
-.contact-header .contact-title{
-    position: absolute;
-    top: 7.5rem;
-    font-size: 3.4rem;
-    font-weight: 600;
-    color: var(--secondary-color);
-}
 
-.contact-header span{
-  position: absolute;
-  top: 14.5rem;
-  border-bottom: 3px solid var(--accent-color);
-  color: transparent;
-}
-
-.contact-page .contact-container{
-  margin-top: 27rem;
+.contact .contact-container{
+  padding-top: 24rem;
   display: grid;
   grid-template-columns: 2fr 4fr;
   color: var(--secondary-color);
@@ -746,7 +656,7 @@ textarea{
   color: var(--dark-gray-color);
   font-size: 1.5rem;
   font-weight: 500;
-  padding-bottom: 2rem;
+  padding: 6rem 0 2rem 0;
 }
 
 .footer a{

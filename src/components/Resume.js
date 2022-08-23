@@ -6,7 +6,7 @@ function Resume() {
 
 	useEffect(() => {
 		const animation = () => {
-			if (window.scrollY >= 3150) {
+			if (window.scrollY >= 3400) {
 				setAnimatePage(true);
 			} else {
 				setAnimatePage(false);
@@ -16,7 +16,7 @@ function Resume() {
 		window.addEventListener("scroll", animation);
 
 		const animation2 = () => {
-			if (window.scrollY >= 3550) {
+			if (window.scrollY >= 3900) {
 				setAnimatePage2(true);
 			} else {
 				setAnimatePage2(false);
@@ -27,7 +27,7 @@ function Resume() {
 	}, []);
 
 	return (
-		<section className='resume-page' id='resume'>
+		<section className='resume-page max-width' id='resume'>
 			<header className='resume-header'>
 				<p className='resume-title'>Resume</p>
 				<span>resumeeeee</span>

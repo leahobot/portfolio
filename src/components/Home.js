@@ -54,16 +54,13 @@ function Home() {
 				</Link>
 
 				<Link
-					className='arrow-down'
+					className='arrow-down animate__animated animate__fadeInDown animate__slow animate__infinite'
 					to='about'
 					spy={true}
 					smooth={true}
 					offset={0}
-					duration={500}>
-					<BiChevronDown
-						size={35}
-						className='animate__animated animate__fadeInDown animate__slow animate__infinite'
-					/>
+					duration={800}>
+					<BiChevronDown size={35} />
 				</Link>
 			</main>
 
@@ -88,7 +85,7 @@ function Home() {
 								enable: true,
 								mode: "repulse",
 							},
-							resize: true,
+							resize: false,
 						},
 						modes: {
 							push: {
@@ -106,7 +103,7 @@ function Home() {
 						},
 						links: {
 							color: "#DCE0E1",
-							distance: 120,
+							distance: 110,
 							enable: true,
 							opacity: 0.65,
 							width: 1,
@@ -126,10 +123,10 @@ function Home() {
 						},
 						number: {
 							density: {
-								enable: true,
-								area: 800,
+								enable: false,
+								// area: 400,
 							},
-							value: 40,
+							value: 35,
 						},
 						opacity: {
 							value: 0.6,
@@ -138,7 +135,7 @@ function Home() {
 							type: "circle",
 						},
 						size: {
-							value: {min: 0, max: 3},
+							value: {min: 0, max: 2.5},
 						},
 					},
 					detectRetina: false,
