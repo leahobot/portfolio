@@ -1,6 +1,12 @@
 {
-  "short_name": "Portfolio logo",
-  "name": "The official logo of Leah Obot",
+  
+  "name": "Portfolio",
+  "short_name": "Portfolio",
+  "theme_color": "#7dd9ee",
+  "background_color": "#6c757d",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
   "icons": [
     {
       "src": "favicon.ico",

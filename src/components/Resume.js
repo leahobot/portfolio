@@ -27,7 +27,7 @@ function Resume() {
 	}, []);
 
 	return (
-		<section className='resume-page max-width' id='resume'>
+		<section className='resume-page max-width' name='resume'>
 			<header className='resume-header'>
 				<p className='resume-title'>Resume</p>
 				<span>resumeeeee</span>

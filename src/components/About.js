@@ -34,7 +34,7 @@ function About() {
 	];
 
 	return (
-		<section className='about-page' id='about'>
+		<section className='about-page' name='about'>
 			<div className='max-width'>
 				<header className='about-header'>
 					<p className='about-title'>Know Me More</p>

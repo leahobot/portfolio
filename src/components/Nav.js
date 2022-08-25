@@ -1,15 +1,14 @@
 import React, {useState} from "react";
 import logo from "../images/logo.png";
 import {BsLinkedin, BsGithub, BsInstagram} from "react-icons/bs";
-// import * as Scroll from "react-scroll";
 import {Link} from "react-scroll";
 
 function Nav() {
-	const [LinkedIn, setLinkedIn] = useState("");
-	const [Github, setGithub] = useState("");
-	const [Instagram, setInstagram] = useState("");
-
+	const [modal1, setModal1] = useState(false);
+	const [modal2, setModal2] = useState(false);
+	const [modal3, setModal3] = useState(false);
 	const [bgColor, setBgColor] = useState(false);
+
 	const changeNavColor = () => {
 		if (window.scrollY >= 80) {
 			setBgColor(true);
@@ -34,6 +33,7 @@ function Nav() {
 				</div>
 
 				<div>
+					<div className='nav-menu'></div>
 					<ul className='nav-items'>
 						<li>
 							<Link
@@ -107,8 +107,8 @@ function Nav() {
 				<div>
 					<ul className='nav-socials'>
 						<li
-							onMouseOver={() => setLinkedIn("LinkedIn")}
-							onMouseOut={() => setLinkedIn("")}>
+							onMouseOver={() => setModal1(true)}
+							onMouseOut={() => setModal1(false)}>
 							<a
 								href='https://linkedin.com/in/leahobot'
 								target='_blank'
@@ -116,12 +116,12 @@ function Nav() {
 								rel='noreferrer'>
 								<BsLinkedin size={22} />
 							</a>
-							<span>{LinkedIn}</span>
+							{modal1 && <span>Linkedin</span>}
 						</li>
 
 						<li
-							onMouseOver={() => setGithub("Github")}
-							onMouseOut={() => setGithub("")}>
+							onMouseOver={() => setModal2(true)}
+							onMouseOut={() => setModal2(false)}>
 							<a
 								href='https://github.com/leahobot'
 								target='_blank'
@@ -129,12 +129,12 @@ function Nav() {
 								className='nav-link'>
 								<BsGithub size={22} />
 							</a>
-							<span>{Github}</span>
+							{modal2 && <span>Github</span>}
 						</li>
 
 						<li
-							onMouseOver={() => setInstagram("Instagram")}
-							onMouseOut={() => setInstagram("")}>
+							onMouseOver={() => setModal3(true)}
+							onMouseOut={() => setModal3(false)}>
 							<a
 								href='https://www.instagram.com/leahobot/'
 								target='_blank'
@@ -142,7 +142,7 @@ function Nav() {
 								rel='noreferrer'>
 								<BsInstagram size={22} />
 							</a>
-							<span>{Instagram}</span>
+							{modal3 && <span>Instagram</span>}
 						</li>
 					</ul>
 				</div>

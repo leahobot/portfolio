@@ -47,7 +47,7 @@ function WhatIDo() {
 	];
 
 	return (
-		<section className='whatIDo' id='whatIDo'>
+		<section className='whatIDo' name='whatIDo'>
 			<div className='max-width'>
 				<header className='what-header'>
 					<p className='what-title'>What I Do</p>

@@ -13,7 +13,7 @@ function Home() {
 	const particlesLoaded = useCallback((container) => {}, []);
 
 	return (
-		<section className='hero-page' id='home'>
+		<section className='hero-page' name='home'>
 			<main className='hero-content'>
 				<p className='hero-heading'>Welcome</p>
 				<div className='hero-typewriter'>
@@ -85,7 +85,7 @@ function Home() {
 								enable: true,
 								mode: "repulse",
 							},
-							resize: false,
+							resize: true,
 						},
 						modes: {
 							push: {
@@ -103,7 +103,7 @@ function Home() {
 						},
 						links: {
 							color: "#DCE0E1",
-							distance: 110,
+							distance: 100,
 							enable: true,
 							opacity: 0.65,
 							width: 1,
@@ -115,18 +115,18 @@ function Home() {
 							directions: "none",
 							enable: true,
 							outModes: {
-								default: "bounce",
+								default: "default",
 							},
-							random: false,
-							speed: 1.3,
+							random: true,
+							speed: 1.2,
 							straight: false,
 						},
 						number: {
 							density: {
-								enable: false,
-								// area: 400,
+								enable: true,
+								area: 500,
 							},
-							value: 35,
+							value: 30,
 						},
 						opacity: {
 							value: 0.6,
@@ -138,7 +138,7 @@ function Home() {
 							value: {min: 0, max: 2.5},
 						},
 					},
-					detectRetina: false,
+					detectRetina: true,
 					fullScreen: false,
 				}}
 			/>

@@ -7,6 +7,7 @@ import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
 import WhatIDo from "./components/WhatIDo";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 import "animate.css";
 
@@ -21,19 +22,9 @@ function App() {
 			<Resume />
 			<Contact />
 			<Footer />
+			<ScrollToTop />
 		</div>
 	);
 }
 
 export default App;
-
-// <Routes>
-// 	<Route index element={<Home />} />
-// 	<Route path='/home' element={<Home />} />
-// 	<Route path='/about' element={<About />} />
-// 	<Route path='/contact' element={<Contact />} />
-// 	<Route path='/portfolio' element={<Portfolio />} />
-// 	<Route path='/resume' element={<Resume />} />
-// 	<Route path='/whatIDo' element={<WhatIDo />} />
-// 	<Route path='*' element={<NotFound />} />
-// </Routes>;
