@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import logo from "../images/logo.png";
+import Hamburger from "hamburger-react";
 import {BsLinkedin, BsGithub, BsInstagram} from "react-icons/bs";
 import {Link} from "react-scroll";
 
@@ -8,6 +9,8 @@ function Nav() {
 	const [modal2, setModal2] = useState(false);
 	const [modal3, setModal3] = useState(false);
 	const [bgColor, setBgColor] = useState(false);
+	const [isOpen, setOpen] = useState(false);
+	const [displayMenu, setDisplayMenu] = useState(false);
 
 	const changeNavColor = () => {
 		if (window.scrollY >= 80) {
@@ -17,6 +20,11 @@ function Nav() {
 		}
 	};
 	window.addEventListener("scroll", changeNavColor);
+
+	const closeMenu = () => {
+		setDisplayMenu(false);
+		setOpen(!isOpen);
+	};
 
 	return (
 		<nav
@@ -33,10 +41,21 @@ function Nav() {
 				</div>
 
 				<div>
-					<div className='nav-menu'></div>
-					<ul className='nav-items'>
+					<div
+						onClick={() => setDisplayMenu(!displayMenu)}
+						className='nav-menu'>
+						<Hamburger toggled={isOpen} toggle={setOpen} size={20} rounded />
+					</div>
+
+					<ul
+						className={
+							displayMenu
+								? "nav-items animate__animated animate__slideInDown"
+								: " nav-items close-menu"
+						}>
 						<li>
 							<Link
+								onClick={closeMenu}
 								className='nav-link'
 								to='home'
 								spy={true}
@@ -48,55 +67,60 @@ function Nav() {
 						</li>
 						<li>
 							<Link
+								onClick={closeMenu}
 								className='nav-link'
 								to='about'
 								spy={true}
 								smooth={true}
-								offset={0}
+								offset={-30}
 								duration={800}>
 								About
 							</Link>
 						</li>
 						<li>
 							<Link
+								onClick={closeMenu}
 								className='nav-link'
 								to='whatIDo'
 								spy={true}
 								smooth={true}
-								offset={0}
+								offset={-30}
 								duration={800}>
 								What I Do
 							</Link>
 						</li>
 						<li>
 							<Link
+								onClick={closeMenu}
 								className='nav-link'
 								to='portfolio'
 								spy={true}
 								smooth={true}
-								offset={0}
+								offset={-30}
 								duration={800}>
 								Portfolio
 							</Link>
 						</li>
 						<li>
 							<Link
+								onClick={closeMenu}
 								className='nav-link'
 								to='resume'
 								spy={true}
 								smooth={true}
-								offset={0}
+								offset={-80}
 								duration={800}>
 								Resume
 							</Link>
 						</li>
 						<li>
 							<Link
+								onClick={closeMenu}
 								className='nav-link'
 								to='contact'
 								spy={true}
 								smooth={true}
-								offset={0}
+								offset={-30}
 								duration={800}>
 								Contact
 							</Link>
