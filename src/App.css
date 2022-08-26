@@ -134,16 +134,18 @@
 .hero-heading{
   font-size: 2.8rem;
   font-weight: 500;
-  margin-top: 14rem;
+  margin-top: 12rem;
 }
 
 .hero-body{
   font-size: 1.6rem;
   font-weight: 400;
-  margin-top: 4.5rem;
 }
 
 .hero-typewriter{
+  height: 15rem;
+  width: 100%;
+  text-align: center;
   font-weight: 600;
   font-size: 6rem;
 }
@@ -168,7 +170,7 @@
   background-color: transparent;
   color: var(--accent-color);
   margin-top: 1rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 3rem;
   transition: all 0.4s ease-in;
   z-index: 2;
 }

@@ -42,6 +42,7 @@ function Home() {
 						}}
 					/>
 				</div>
+
 				<p className='hero-body'>based in Lagos, Nigeria</p>
 				<Link
 					className='btn btn-outlined'

@@ -20,16 +20,22 @@ function Contact() {
 							<p>leahobot@gmail.com</p>
 						</div>
 					</div>
-					<form className='contact-details'>
+					<form
+						className='contact-details'
+						name='contact'
+						method='POST'
+						data-netlify='true'>
 						<div className='input-details'>
-							<input typeof='text' placeholder='Name' />
-							<input typeof='email' placeholder='Email' />
+							<input typeof='text' placeholder='Name' name='name' />
+							<input typeof='email' placeholder='Email' name='email' />
 						</div>
 
-						<input typeof='text' placeholder='Subject' />
-						<textarea placeholder='Type message here...' />
+						<input typeof='text' placeholder='Subject' name='name' />
+						<textarea placeholder='Type message here...' name='message' />
 
-						<button className='btn btn-send'>Send Message</button>
+						<button className='btn btn-send' type='submit'>
+							Send Message
+						</button>
 					</form>
 				</main>
 			</div>
