@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/github.io/portfolio/static/css/main.f1eed78e.css",
+    "main.js": "/github.io/portfolio/static/js/main.7b5d57a2.js",
+    "static/js/787.128fc6e9.chunk.js": "/github.io/portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/hero.jpg": "/github.io/portfolio/static/media/hero.64df6f405733aee1fe05.jpg",
+    "static/media/text to speech.JPG": "/github.io/portfolio/static/media/text to speech.586a47a49b1f1547c6fd.JPG",
+    "static/media/bricks.JPG": "/github.io/portfolio/static/media/bricks.a0e86a1166b873eb7ddb.JPG",
+    "static/media/github finder.JPG": "/github.io/portfolio/static/media/github finder.760be4252eca48108d51.JPG",
+    "static/media/image.jpg": "/github.io/portfolio/static/media/image.cda36762e0eb1592c86f.jpg",
+    "static/media/typing master.JPG": "/github.io/portfolio/static/media/typing master.c36bf8afa8be509740d5.JPG",
+    "static/media/number-guesser.JPG": "/github.io/portfolio/static/media/number-guesser.9d70395b77281a182548.JPG",
+    "index.html": "/github.io/portfolio/index.html",
+    "main.f1eed78e.css.map": "/github.io/portfolio/static/css/main.f1eed78e.css.map",
+    "main.7b5d57a2.js.map": "/github.io/portfolio/static/js/main.7b5d57a2.js.map",
+    "787.128fc6e9.chunk.js.map": "/github.io/portfolio/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1eed78e.css",
+    "static/js/main.7b5d57a2.js"
+  ]
+}
