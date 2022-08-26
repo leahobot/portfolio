@@ -18,7 +18,7 @@
   z-index: 10;
   position: fixed;
   top: 0;
-  height: 7.5rem;
+  height: 8.5rem;
   width: 100%;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .nav-bar img{
-  height: 4.5rem;
+  height: 6rem;
   padding-top: 0.6rem;
   cursor: pointer;
 }
@@ -52,7 +52,7 @@
 }
 
 .nav-items{
-  font-size: 1.55rem;
+  font-size: 1.8rem;
   gap: 3.2rem;
 }
 
@@ -134,20 +134,22 @@
 .hero-heading{
   font-size: 2.8rem;
   font-weight: 500;
-  margin-top: 12rem;
+  margin-top: 15rem;
 }
 
 .hero-body{
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 400;
+  margin-top: 3rem;
 }
 
 .hero-typewriter{
+  margin-top: 2rem;
   height: 15rem;
   width: 100%;
   text-align: center;
   font-weight: 600;
-  font-size: 6rem;
+  font-size: 7rem;
 }
 
 .type_cursor{
@@ -159,7 +161,7 @@
   text-decoration: none;
   padding: 1.2rem 4rem;
   border-radius: 30px;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 500;
   cursor: pointer;
 }
@@ -219,7 +221,7 @@
 .about-page .about-header::before{
     content:"ABOUT ME"; 
     position: absolute;
-    font-size: 13rem;
+    font-size: 14rem;
     color: var(--light-gray-color);
     font-weight: 600;
     opacity: 0.35;
@@ -232,8 +234,8 @@
   .resume-header .resume-title,
   .contact-header .contact-title{
     position: absolute;
-    top: 195%;
-    font-size: 3.4rem;
+    top: 210%;
+    font-size: 3.7rem;
     font-weight: 600;
     color: var(--secondary-color);
 }
@@ -244,8 +246,8 @@
 .resume-header span,
 .contact-header span{
   position: absolute;
-  top: 365%;
-  border-bottom: 3px solid var(--accent-color);
+  top: 400%;
+  border-bottom: 3.5px solid var(--accent-color);
   color: transparent;
 }
 
@@ -261,12 +263,12 @@
 }
 
 .about-info .about-info-heading{
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 
 .about-info .about-info-body{
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 
@@ -308,7 +310,7 @@
 }
 
 .about-skills header{
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 600;
   color: var(--secondary-color);
 }
@@ -316,7 +318,7 @@
 .skills{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 500;
   padding-top: 1rem;
   gap: 0.5rem;
@@ -369,7 +371,7 @@
 .what-header::before{
     content:"SERVICES"; 
     position: absolute;
-    font-size: 13rem;
+    font-size: 14rem;
     color: var(--light-gray-color);
     font-weight: 600;
     opacity: 0.35;
@@ -390,12 +392,12 @@
 }
 
 .whatIDo .services-content{
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: var(--secondary-color);
 }
 
 .whatIDo .services-title{
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 500;
 }
 
@@ -414,7 +416,7 @@
 .portfolio-header::before{
     content:"PORTFOLIO"; 
     position: absolute;
-    font-size: 13rem;
+    font-size: 14rem;
     color: var(--light-gray-color);
     font-weight: 600;
     opacity: 0.35;
@@ -484,7 +486,7 @@
 }
 
 .work-text p{
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: var(--primary-color);
   position: Absolute;
@@ -522,7 +524,7 @@
 .resume-header::before{
     content:"SUMMARY"; 
     position: absolute;
-    font-size: 13rem;
+    font-size: 14rem;
     color: var(--light-gray-color);
     font-weight: 600;
     opacity: 0.35;
@@ -541,7 +543,7 @@
 
 .resume-content{
   padding: 2rem;
-  font-size: 1.35rem;
+  font-size: 1.7rem;
   color: var(--secondary-color);
   border-top: 0.5px solid var(--light-gray-color);
   border-right: 0.5px solid var(--light-gray-color);
@@ -568,7 +570,7 @@
 
 .resume-container header{
   padding: 5rem 0 1rem 0;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
   color: var(--secondary-color);
 }
@@ -582,7 +584,7 @@
 .contact-header::before{
     content:"CONTACT"; 
     position: absolute;
-    font-size: 13rem;
+    font-size: 14rem;
     color: var(--light-gray-color);
     font-weight: 600;
     opacity: 0.35;
@@ -599,7 +601,7 @@
 .contact-me{
   display: flex;
   align-items: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   gap: 1rem;
 }
 
@@ -621,7 +623,7 @@
 .contact-details input,
 .contact-details textarea{
   border-radius: 4px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding: 1.5rem;
   width: 95%;
   background-color: var(--primary-color);
@@ -671,7 +673,7 @@ textarea{
   justify-content: center;
   align-items: center;
   color: var(--dark-gray-color);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 500;
   padding: 6rem 0 2rem 0;
 }
@@ -697,8 +699,8 @@ footer a:hover{
   align-items: center;
   justify-content: center;
   background-color: rgb(186, 183, 183);
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 5rem;
+  width: 5rem;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   border: 0;
@@ -716,8 +718,8 @@ footer a:hover{
 
 .scroll-modal{
   position: fixed;
-  right: 5.8%;
-  bottom: 4%;
+  right: 6.3%;
+  bottom: 3.5%;
   z-index: 2;
   font-size: 1.2rem;
   padding: 0.6rem 1rem;
@@ -738,18 +740,10 @@ footer a:hover{
 
 
 @media screen and (max-width: 768px){  
-   .nav-bar{
-      height: 6rem;
-    }
-
     .nav-width{
       max-width: 90%;
       align-items: center;
       justify-content: space-between;
-    }
-
-    .nav-width img{
-      height: 3.5rem;
     }
 
     .nav-bar .nav-menu{
@@ -789,31 +783,35 @@ footer a:hover{
 
     .nav-socials li{
       padding-top: 0.4rem;
-      padding-left: 1rem;
+      padding-left: 0.5rem;
     }
 
     .nav-socials span{
       display: none;
     }
 
+    .hero-page{
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+
     .hero-heading{
-      font-size: 2rem;
+      margin-top: 18rem;
     }
  
   .hero-typewriter{
-    margin-top: 2.5rem;
-    height: 15rem;
-    font-size: 2.7rem;
+    margin-top: 2rem;
+    height: 20rem;
+    font-size: 4.5rem;
     width: 80%;
     text-align: center;
 }
 
   .hero-body{
-    margin-top: 5rem;
+    margin-top: 6rem;
   }
 
   .btn-outlined{
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     background-color: var(--accent-hover-color);
     color: var(--primary-color);
   }
@@ -821,6 +819,10 @@ footer a:hover{
   #tsparticles{
     display: none;
   }
+
+  .arrow-down{
+ margin-top: 2rem;
+}
 
   .about-page,
   .whatIDo,
@@ -837,7 +839,7 @@ footer a:hover{
 .portfolio-page .portfolio-header::before,
 .resume-page .resume-header::before,
 .contact .contact-header::before{
-    font-size: 5rem; 
+    font-size: 5.5rem; 
   }
 
 .about-page .about-title,
@@ -845,7 +847,7 @@ footer a:hover{
 .portfolio-page .portfolio-title,
 .resume-header .resume-title,
 .contact-header .contact-title{
-    top: 90%;
+    top: 97%;
     font-size: 2.2rem;
 }
 
@@ -854,8 +856,8 @@ footer a:hover{
 .portfolio-header span,
 .resume-header span,
 .contact-header span{
-  top: 185%;
-  border-bottom: 1.5px solid var(--accent-color);
+  top: 195%;
+  border-bottom: 2.5px solid var(--accent-color);
 }
 
 .about-page main{
@@ -870,7 +872,7 @@ footer a:hover{
 }
 
 .about-info .about-info-heading{
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 
 .about-info .about-info-body{
@@ -900,13 +902,13 @@ footer a:hover{
 }
 
 .about-skills header{
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 .skills{
   display: grid;
   grid-template-columns:1fr;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   gap: 0;
 }
@@ -936,12 +938,13 @@ footer a:hover{
 }
 
 .whatIDo .services-content{
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .whatIDo .services-title{
-  margin-bottom: -1rem;
-  font-size: 1.8rem;
+  margin-bottom: -0.5rem;
+  font-size: 1.9rem;
+  font-weight: 600;
 }
 
 .whatIDo .services-icon{
@@ -976,7 +979,7 @@ grid-template-areas: "work-1 work-2"
 }
 
 .work-text p{
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   width: 90%;
   top: 30%;
   left: 3%;
@@ -1090,7 +1093,7 @@ footer a:hover{
 }
 
 .scrollBtn{
-  right: 2%;
+  right: 4%;
   background-color: var(--accent-color);
 }
 

@@ -44,7 +44,7 @@ function Nav() {
 					<div
 						onClick={() => setDisplayMenu(!displayMenu)}
 						className='nav-menu'>
-						<Hamburger toggled={isOpen} toggle={setOpen} size={20} rounded />
+						<Hamburger toggled={isOpen} toggle={setOpen} size={30} rounded />
 					</div>
 
 					<ul
@@ -138,7 +138,7 @@ function Nav() {
 								target='_blank'
 								className='nav-link'
 								rel='noreferrer'>
-								<BsLinkedin size={22} />
+								<BsLinkedin size={30} />
 							</a>
 							{modal1 && <span>Linkedin</span>}
 						</li>
@@ -151,7 +151,7 @@ function Nav() {
 								target='_blank'
 								rel='noreferrer'
 								className='nav-link'>
-								<BsGithub size={22} />
+								<BsGithub size={30} />
 							</a>
 							{modal2 && <span>Github</span>}
 						</li>
@@ -164,7 +164,7 @@ function Nav() {
 								target='_blank'
 								className='nav-link'
 								rel='noreferrer'>
-								<BsInstagram size={22} />
+								<BsInstagram size={30} />
 							</a>
 							{modal3 && <span>Instagram</span>}
 						</li>
