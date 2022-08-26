@@ -755,7 +755,7 @@ footer a:hover{
     .nav-bar .nav-menu{
       display: flex;
       color: var(--primary-color);
-      left: 150%;
+      left: 145%;
       padding-top: 0.3rem;
       cursor: pointer;
       position: relative
@@ -793,7 +793,11 @@ footer a:hover{
 
     .nav-socials li{
       padding-top: 0.4rem;
-      padding-left: 0.2rem;
+      padding-left: 0.7rem;
+    }
+    
+    .nav-socials li a{
+      color: var(--light-gray-color);
     }
 
     .nav-socials span{
@@ -801,11 +805,11 @@ footer a:hover{
     }
 
     .hero-page{
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.85);
   }
 
     .hero-heading{
-      font-size: 2.5rem;
+      font-size: 2.1rem;
       margin-top: 15rem;
     }
  
@@ -818,12 +822,12 @@ footer a:hover{
 }
 
   .hero-body{
-    font-size: 1.75rem;
-    margin-top: 6rem;
+    font-size: 1.7rem;
+    margin-top: 5.5rem;
   }
 
   .btn-outlined{
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     background-color: var(--accent-hover-color);
     color: var(--primary-color);
   }
