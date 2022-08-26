@@ -755,7 +755,7 @@ footer a:hover{
     .nav-bar .nav-menu{
       display: flex;
       color: var(--primary-color);
-      left: 145%;
+      left: 140%;
       padding-top: 0.3rem;
       cursor: pointer;
       position: relative
@@ -793,7 +793,7 @@ footer a:hover{
 
     .nav-socials li{
       padding-top: 0.4rem;
-      padding-left: 0.7rem;
+      padding-left: 1.2rem;
     }
     
     .nav-socials li a{
@@ -809,21 +809,21 @@ footer a:hover{
   }
 
     .hero-heading{
-      font-size: 2.1rem;
-      margin-top: 15rem;
+      font-size: 2rem;
+      margin-top: 17rem;
     }
  
   .hero-typewriter{
     margin-top: 2rem;
     height: 20rem;
-    font-size: 4rem;
+    font-size: 3.7rem;
     width: 80%;
     text-align: center;
 }
 
   .hero-body{
-    font-size: 1.7rem;
-    margin-top: 5.5rem;
+    font-size: 1.65rem;
+    margin-top: 5rem;
   }
 
   .btn-outlined{
