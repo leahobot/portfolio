@@ -96,6 +96,10 @@
   color:var(--accent-color);
 }
 
+.nav-icon{
+  font-size: 3rem;
+}
+
 .active{
   color:var(--accent-color);
 }
@@ -159,7 +163,7 @@
 .btn{
   display: inline-block;
   text-decoration: none;
-  padding: 1.2rem 4rem;
+  padding: 1.5rem 4rem;
   border-radius: 30px;
   font-size: 1.7rem;
   font-weight: 500;
@@ -804,9 +808,13 @@ footer a:hover{
       display: none;
     }
 
+    .nav-icon{
+    font-size: 2rem;
+    }
+
     .hero-page{
     background-color: rgba(0, 0, 0, 0.85);
-  }
+    }
 
     .hero-heading{
       font-size: 2rem;

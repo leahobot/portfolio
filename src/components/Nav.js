@@ -138,7 +138,7 @@ function Nav() {
 								target='_blank'
 								className='nav-link'
 								rel='noreferrer'>
-								<BsLinkedin size={30} />
+								<BsLinkedin className='nav-icon' />
 							</a>
 							{modal1 && <span>Linkedin</span>}
 						</li>
@@ -151,7 +151,7 @@ function Nav() {
 								target='_blank'
 								rel='noreferrer'
 								className='nav-link'>
-								<BsGithub size={30} />
+								<BsGithub className='nav-icon' />
 							</a>
 							{modal2 && <span>Github</span>}
 						</li>
@@ -164,7 +164,7 @@ function Nav() {
 								target='_blank'
 								className='nav-link'
 								rel='noreferrer'>
-								<BsInstagram size={30} />
+								<BsInstagram className='nav-icon' />
 							</a>
 							{modal3 && <span>Instagram</span>}
 						</li>
