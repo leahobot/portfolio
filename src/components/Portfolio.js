@@ -1,8 +1,8 @@
 import React from "react";
-import textToSpeech from "../images/text to speech.JPG";
+import jaysBank from "../images/jaysBank.webp";
+import jaysStore from "../images/jaysStore.webp";
 import bricksBreaker from "../images/bricks.JPG";
 import ghFinder from "../images/github finder.JPG";
-import numberGuesser from "../images/number-guesser.JPG";
 import typing from "../images/typing master.JPG";
 
 function Portfolio() {
@@ -20,24 +20,24 @@ function Portfolio() {
 					rel='noreferrer'
 					className='my-work work-1'>
 					<div className='work-image'>
-						<img src={textToSpeech} alt='my-work' />
+						<img src={jaysStore} alt='my-work' />
 					</div>
 					<div className='work-text'>
-						<p>A Text-to-Speech Web Application</p>
+						<p>Highly Responsive Ecommerce App</p>
 						<div></div>
 					</div>
 				</a>
 				<a
-					href='https://leahobot.github.io/number-guesser/'
+					href='https://leahobot.github.io/jaysBank/'
 					alt='my-work'
 					target='_blank'
 					rel='noreferrer'
 					className='my-work work-2'>
 					<div className='work-image-2'>
-						<img src={numberGuesser} alt='my-work' />
+						<img src={jaysBank} alt='my-work' />
 					</div>
 					<div className='work-text'>
-						<p>A Number Guesser Web Application</p>
+						<p>A Modern Bank Website</p>
 						<div></div>
 					</div>
 				</a>
