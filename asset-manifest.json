@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.382df3fc.css",
-    "main.js": "/portfolio/static/js/main.e8e55eae.js",
+    "main.js": "/portfolio/static/js/main.a1389a0e.js",
     "static/js/787.128fc6e9.chunk.js": "/portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/hero.jpg": "/portfolio/static/media/hero.64df6f405733aee1fe05.jpg",
-    "static/media/text to speech.JPG": "/portfolio/static/media/text to speech.586a47a49b1f1547c6fd.JPG",
+    "static/media/jaysBank.webp": "/portfolio/static/media/jaysBank.61c77eb81449460abb11.webp",
     "static/media/bricks.JPG": "/portfolio/static/media/bricks.a0e86a1166b873eb7ddb.JPG",
     "static/media/github finder.JPG": "/portfolio/static/media/github finder.760be4252eca48108d51.JPG",
     "static/media/image.jpg": "/portfolio/static/media/image.cda36762e0eb1592c86f.jpg",
+    "static/media/jaysStore.webp": "/portfolio/static/media/jaysStore.d5187982437130468c45.webp",
     "static/media/typing master.JPG": "/portfolio/static/media/typing master.c36bf8afa8be509740d5.JPG",
-    "static/media/number-guesser.JPG": "/portfolio/static/media/number-guesser.9d70395b77281a182548.JPG",
     "index.html": "/portfolio/index.html",
     "main.382df3fc.css.map": "/portfolio/static/css/main.382df3fc.css.map",
-    "main.e8e55eae.js.map": "/portfolio/static/js/main.e8e55eae.js.map",
+    "main.a1389a0e.js.map": "/portfolio/static/js/main.a1389a0e.js.map",
     "787.128fc6e9.chunk.js.map": "/portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.382df3fc.css",
-    "static/js/main.e8e55eae.js"
+    "static/js/main.a1389a0e.js"
   ]
 }
