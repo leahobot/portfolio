@@ -61,7 +61,7 @@ function Home() {
 					smooth={true}
 					offset={0}
 					duration={800}>
-					<BiChevronDown size={45} />
+					<BiChevronDown size={35} />
 				</Link>
 			</main>
 
