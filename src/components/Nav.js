@@ -44,7 +44,7 @@ function Nav() {
 					<div
 						onClick={() => setDisplayMenu(!displayMenu)}
 						className='nav-menu'>
-						<Hamburger toggled={isOpen} toggle={setOpen} size={30} rounded />
+						<Hamburger toggled={isOpen} toggle={setOpen} size={25} rounded />
 					</div>
 
 					<ul

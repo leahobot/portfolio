@@ -743,7 +743,7 @@ footer a:hover{
 }
 
 
-@media screen and (max-width: 768px){  
+@media screen and (max-width: 850px){  
     .nav-width{
       max-width: 90%;
       align-items: center;
@@ -812,21 +812,21 @@ footer a:hover{
     }
 
     .hero-heading{
-      font-size: 2rem;
+      font-size: 1.7rem;
       margin-top: 17rem;
     }
  
   .hero-typewriter{
-    margin-top: 2rem;
+    margin-top: 8rem;
     height: 20rem;
-    font-size: 3.7rem;
+    font-size: 4rem;
     width: 80%;
     text-align: center;
 }
 
   .hero-body{
     font-size: 1.65rem;
-    margin-top: 5rem;
+    margin-top: 6rem;
   }
 
   .btn-outlined{
@@ -840,7 +840,7 @@ footer a:hover{
   }
 
   .arrow-down{
-  margin-top: 1rem;
+  margin-top: 2.5rem;
 }
 
   .about-page,
@@ -875,7 +875,7 @@ footer a:hover{
 .portfolio-header span,
 .resume-header span,
 .contact-header span{
-  top: 197%;
+  top: 227%;
   border-bottom: 2.5px solid var(--accent-color);
 }
 
