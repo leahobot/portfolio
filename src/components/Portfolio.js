@@ -1,9 +1,9 @@
 import React from "react";
 import jaysBank from "../images/jaysBank.webp";
+import dashboard from "../images/admin-darkMoade.JPG";
 import jaysStore from "../images/jaysStore.webp";
-import bricksBreaker from "../images/bricks.JPG";
-import ghFinder from "../images/github finder.JPG";
-import typing from "../images/typing master.JPG";
+import textSpeech from "../images/text2speech.webp";
+import fruitHub from "../images/fruitHub.webp";
 
 function Portfolio() {
 	return (
@@ -14,7 +14,7 @@ function Portfolio() {
 			</header>
 			<main className='my-work-container'>
 				<a
-					href='https://leahobot.github.io/Text-to-Speech-App/'
+					href='https://leahobot.github.io/jaysStore/'
 					alt='my-work'
 					target='_blank'
 					rel='noreferrer'
@@ -23,7 +23,7 @@ function Portfolio() {
 						<img src={jaysStore} alt='my-work' />
 					</div>
 					<div className='work-text'>
-						<p>Highly Responsive Ecommerce App</p>
+						<p>Highly Responsive Ecommerce Website</p>
 						<div></div>
 					</div>
 				</a>
@@ -42,44 +42,44 @@ function Portfolio() {
 					</div>
 				</a>
 				<a
-					href='https://leahobot.github.io/typing-master/'
+					href='https://leahobot.github.io/fruitHub/'
 					alt='my-work'
 					target='_blank'
 					rel='noreferrer'
 					className='my-work work-3'>
 					<div className='work-image'>
-						<img src={typing} alt='my-work' />
+						<img src={fruitHub} alt='my-work' />
 					</div>
 					<div className='work-text'>
-						<p>Typing Master Web Application</p>
+						<p>A Full-Stack Ecommerce Website</p>
 						<div></div>
 					</div>
 				</a>
 				<a
-					href='https://leahobot.github.io/github-profile-finder/'
+					href='https://jaysadmin.netlify.app/'
 					alt='my-work'
 					target='_blank'
 					rel='noreferrer'
 					className='my-work work-4'>
 					<div className='work-image'>
-						<img src={ghFinder} alt='my-work' />
+						<img src={dashboard} alt='my-work' />
 					</div>
 					<div className='work-text'>
-						<p>Github Users Finder</p>
+						<p>A Modern Admin-Dashboard</p>
 						<div></div>
 					</div>
 				</a>
 				<a
-					href='https://leahobot.github.io/brick-breaker/'
+					href='https://leahobot.github.io/Text-to-Speech-App/'
 					alt='my-work'
 					target='_blank'
 					rel='noreferrer'
 					className='my-work work-5'>
 					<div className='work-image'>
-						<img src={bricksBreaker} alt='my-work' />
+						<img src={textSpeech} alt='my-work' />
 					</div>
 					<div className='work-text'>
-						<p>Bricks Breaker Web Application</p>
+						<p>A Text-to-Speech Web Application</p>
 						<div></div>
 					</div>
 				</a>

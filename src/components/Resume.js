@@ -59,38 +59,6 @@ function Resume() {
 								Established a continuous integration environment for automated
 								build and deployment process
 							</li>
-
-							<li>
-								Collaborates with UX/UI design team to improve 10+ websites
-								which increased its performance rate.
-							</li>
-						</ul>
-					</div>
-
-					<div
-						className={
-							animatePage
-								? "animate__animated animate__bounce animate__slideInRight resume-content"
-								: "resume-content"
-						}>
-						<span>April 2019 - Dec 2021</span>
-						<h1>Web Developer</h1>
-						<p className='resume-work'> Heart and Soul Consult, Nigeria</p>
-						<ul>
-							<li>
-								Developed highly responsive and scalable websites across
-								different platforms.
-							</li>
-							<li>
-								Increased daily visitors by 60% after developing clients
-								websites using ReactJS.
-							</li>
-							<li>
-								Translated over 30+ UI/UX design prototypes of responsive
-								landing pages to actual codes using JavaScript, HTML and CSS.
-							</li>
-
-							<li>Collaborated and built 70% reusable codes for future use.</li>
 						</ul>
 					</div>
 				</div>
@@ -113,3 +81,30 @@ function Resume() {
 }
 
 export default Resume;
+
+// <div
+// 	className={
+// 		animatePage
+// 			? "animate__animated animate__bounce animate__slideInRight resume-content"
+// 			: "resume-content"
+// 	}>
+// 	<span>April 2019 - Dec 2021</span>
+// 	<h1>Web Developer</h1>
+// 	<p className='resume-work'> Heart and Soul Consult, Nigeria</p>
+// 	<ul>
+// 		<li>
+// 			Developed highly responsive and scalable websites across different
+// 			platforms.
+// 		</li>
+// 		<li>
+// 			Increased daily visitors by 60% after developing clients websites using
+// 			ReactJS.
+// 		</li>
+// 		<li>
+// 			Translated over 30+ UI/UX design prototypes of responsive landing pages to
+// 			actual codes using JavaScript, HTML and CSS.
+// 		</li>
+
+// 		<li>Collaborated and built 70% reusable codes for future use.</li>
+// 	</ul>
+// </div>;
