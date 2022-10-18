@@ -1,6 +1,6 @@
 import React from "react";
 import jaysBank from "../images/jaysBank.webp";
-import dashboard from "../images/admin-darkMoade.JPG";
+import dashboard from "../images/admin-darkMode.JPG";
 import jaysStore from "../images/jaysStore.webp";
 import textSpeech from "../images/text2speech.webp";
 import fruitHub from "../images/fruitHub.webp";
