@@ -14,7 +14,7 @@ function Portfolio() {
 			</header>
 			<main className='my-work-container'>
 				<a
-					href='https://leahobot.github.io/jaysStore/'
+					href='https://jays-store.vercel.app/'
 					alt='my-work'
 					target='_blank'
 					rel='noreferrer'
