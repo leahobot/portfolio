@@ -1,19 +1,23 @@
 import React from "react";
-import Nav from "./components/Nav";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Portfolio from "./components/Portfolio";
-import Resume from "./components/Resume";
-import WhatIDo from "./components/WhatIDo";
-import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop";
+import {
+	About,
+	Contact,
+	Footer,
+	Home,
+	Nav,
+	WhatIDo,
+	Portfolio,
+	Resume,
+	ScrollToTop,
+} from "./components";
 import "./App.css";
 import "animate.css";
+import {ToastContainer} from "react-toastify";
 
 function App() {
 	return (
 		<div>
+			<ToastContainer />
 			<Nav />
 			<Home />
 			<About />

@@ -43,8 +43,8 @@ function Resume() {
 								: "resume-content"
 						}>
 						<span>Jan 2022 - Till date</span>
-						<h1>Software Developer</h1>
-						<p className='resume-work'> Univelcity, Nigeria</p>
+						<h1>Frontend Web Developer</h1>
+						<p className='resume-work'> Getmobile Technologies, Nigeria</p>
 						<ul>
 							<li>
 								Daily maintenance of code, debugging issues and solving clients'
@@ -59,6 +59,29 @@ function Resume() {
 								Established a continuous integration environment for automated
 								build and deployment process
 							</li>
+						</ul>
+					</div>
+
+					<div
+						className={
+							animatePage
+								? "animate__animated animate__bounce animate__slideInRight resume-content"
+								: "resume-content"
+						}>
+						<span>Apr 2019 - Dec 2021</span>
+						<h1>Frontend Developer Developer</h1>
+						<p className='resume-work'> Univelcity, Nigeria</p>
+						<ul>
+							<li>
+								Translated over 30+ UI/UX design prototypes of responsive
+								wedsites and web applications to actual codes using JavaScript,
+								ReactJS, HTML and CSS.
+							</li>
+							<li>
+								Increased daily visitors by 60% after developing clients
+								websites using ReactJS and TypeScript.
+							</li>
+							<li>Collaborated and built 70% reusable codes for future use.</li>
 						</ul>
 					</div>
 				</div>
