@@ -167,6 +167,7 @@
   font-size: 1.5rem;
   font-weight: 500;
   cursor: pointer;
+  border-color: transparent;
 }
 
 .btn-outlined{
@@ -671,6 +672,56 @@ textarea{
   transform: translateY(3px);
 }
 
+.contact-modal{
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+}
+
+.contact-modal-box{
+  margin-top: 20vh;
+  background-color: white;
+  height: 14rem;
+  width: 35rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-message{
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.modal-button{
+  border: 0;
+  outline: 0;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 3px;
+  background-color: var(--accent-hover-color);
+  color: white;
+  cursor: pointer;
+}
+
+.modal-button:hover{
+  background-color: var(--accent-color);
+}
+
+.modal-button:active{
+  transform: translateY(2px);
+}
+
 .footer{
   display: flex;
   flex-direction: column;
@@ -743,7 +794,7 @@ footer a:hover{
 }
 
 
-@media screen and (max-width: 850px){  
+@media screen and (max-width: 900px){  
     .nav-width{
       max-width: 90%;
       align-items: center;
@@ -1101,6 +1152,10 @@ textarea{
   transform: translateY(0);
 }
 
+.contact-modal-box{
+  margin-top: 40vh;
+}
+
 .footer{
   font-size: 1.3rem;
   font-weight: 400;
@@ -1119,4 +1174,14 @@ footer a:hover{
 .scroll-modal{
   display: none;
 }
+}
+
+
+@media screen and (max-width: 600px) {
+  .contact-modal-box{
+    margin-top: 35vh;
+    padding: 0 1.5rem;
+    width: 27rem;
+    height: 15rem;
+  }
 }

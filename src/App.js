@@ -12,12 +12,10 @@ import {
 } from "./components";
 import "./App.css";
 import "animate.css";
-import {ToastContainer} from "react-toastify";
 
 function App() {
 	return (
 		<div>
-			<ToastContainer />
 			<Nav />
 			<Home />
 			<About />

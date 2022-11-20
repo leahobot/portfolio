@@ -1,10 +1,11 @@
-import React, {useRef} from "react";
+import React, {Fragment, useRef, useState} from "react";
 import emailjs from "@emailjs/browser";
 import {MdLocationOn, MdEmail} from "react-icons/md";
-import {toast} from "react-toastify";
 
 function Contact() {
 	const form = useRef();
+	const [modal, setModal] = useState(false);
+	const [message, setMessage] = useState("");
 
 	const handleForm = (e) => {
 		e.preventDefault();
@@ -18,72 +19,89 @@ function Contact() {
 			)
 			.then(
 				(result) => {
-					// console.log(result.text);
 					e.target.reset();
-					toast.info(
+					setMessage(
 						"Message sent successfully, you will be contacted shortly",
 					);
+					setModal(true);
 				},
 				(error) => {
-					// console.log(error.text);
-					toast.error("Failed to send message, Try Again");
+					setMessage("Message Failed, Try Again");
+					setModal(true);
 				},
 			);
 	};
 
 	return (
-		<section className='contact' name='contact'>
-			<div className='max-width'>
-				<header className='contact-header'>
-					<p className='contact-title'>Get in Touch</p>
-					<span>get in touchhhhhh</span>
-				</header>
-				<main className='contact-container'>
-					<div className='contact-info'>
-						<div className=' contact-me'>
-							<MdLocationOn className='contact-icon' size={30} />
-							<p>Lagos, Nigeria</p>
+		<Fragment>
+			<section className='contact' name='contact'>
+				<div className='max-width'>
+					<header className='contact-header'>
+						<p className='contact-title'>Get in Touch</p>
+						<span>get in touchhhhhh</span>
+					</header>
+					<main className='contact-container'>
+						<div className='contact-info'>
+							<div className=' contact-me'>
+								<MdLocationOn className='contact-icon' size={30} />
+								<p>Lagos, Nigeria</p>
+							</div>
+							<div className='contact-me'>
+								<MdEmail size={30} className='contact-icon' />
+								<a
+									href='mailto:leahobot@gmail.com'
+									target='_blank'
+									rel='noreferrer'>
+									leahobot@gmail.com
+								</a>
+							</div>
 						</div>
-						<div className='contact-me'>
-							<MdEmail size={30} className='contact-icon' />
-							<a
-								href='mailto:leahobot@gmail.com'
-								target='_blank'
-								rel='noreferrer'>
-								leahobot@gmail.com
-							</a>
-						</div>
-					</div>
-					<form ref={form} onSubmit={handleForm} className='contact-details'>
-						<div className='input-details'>
+						<form ref={form} onSubmit={handleForm} className='contact-details'>
+							<div className='input-details'>
+								<input
+									type='text'
+									placeholder='Name'
+									name='user_name'
+									required
+								/>
+								<input
+									type='email'
+									placeholder='Email'
+									name='user_email'
+									required
+								/>
+							</div>
+
 							<input
-								typeof='text'
-								placeholder='Name'
-								name='user_name'
+								type='text'
+								placeholder='Subject'
+								name='subject'
 								required
 							/>
-							<input
-								typeof='email'
-								placeholder='Email'
-								name='user_email'
+							<textarea
+								placeholder='Type your message here...'
+								name='message'
 								required
 							/>
-						</div>
 
-						<input typeof='text' placeholder='Subject' name='subject' />
-						<textarea
-							placeholder='Type your message here...'
-							name='message'
-							required
-						/>
-
-						<button className='btn btn-send' type='submit'>
-							Send Message
+							<button className='btn btn-send' type='submit'>
+								Send Message
+							</button>
+						</form>
+					</main>
+				</div>
+			</section>
+			{modal && (
+				<section className='contact-modal'>
+					<div className='contact-modal-box'>
+						<p className='contact-message'>{message}</p>
+						<button onClick={() => setModal(false)} className='modal-button'>
+							Close
 						</button>
-					</form>
-				</main>
-			</div>
-		</section>
+					</div>
+				</section>
+			)}
+		</Fragment>
 	);
 }
 
