@@ -1,6 +1,6 @@
 import React from "react";
 import jaysBank from "../images/jaysBank.webp";
-import dashboard from "../images/admin-darkMode.JPG";
+import cleanax from "../images/cleanax.png";
 import jaysStore from "../images/jaysStore.webp";
 import textSpeech from "../images/text2speech.webp";
 import fruitHub from "../images/fruitHub.webp";
@@ -29,6 +29,21 @@ function Portfolio() {
 				</header>
 				<main className="flex flex-wrap justify-between w-full mt-[5rem] sm:mt-[7rem] xl:mt-[8rem] 2xl:mt-[11rem]">
 					<a
+						href="https://cleanax.vercel.app/"
+						alt="my-work"
+						target="_blank"
+						rel="noreferrer"
+						className={`${imageBoxStyle} w-[46%]`}>
+						<img
+							src={cleanax}
+							alt="my-work"
+							className={image}
+						/>
+						<div className={wrapperStyle}>
+							<p>A lundromat website for booking services</p>
+						</div>
+					</a>
+					<a
 						href="https://jays-store.vercel.app/"
 						alt="my-work"
 						target="_blank"
@@ -41,21 +56,6 @@ function Portfolio() {
 						/>
 						<div className={wrapperStyle}>
 							<p>Highly Responsive Ecommerce Website</p>
-						</div>
-					</a>
-					<a
-						href="https://leahobot.github.io/jaysBank/"
-						alt="my-work"
-						target="_blank"
-						rel="noreferrer"
-						className={`${imageBoxStyle} w-[46%]`}>
-						<img
-							src={jaysBank}
-							alt="my-work"
-							className={image}
-						/>
-						<div className={wrapperStyle}>
-							<p>A Modern Bank Website</p>
 						</div>
 					</a>
 					<a
@@ -74,18 +74,18 @@ function Portfolio() {
 						</div>
 					</a>
 					<a
-						href="https://jaysadmin.netlify.app/"
+						href="https://leahobot.github.io/jaysBank/"
 						alt="my-work"
 						target="_blank"
 						rel="noreferrer"
 						className={`${imageBoxStyle} w-[46%]`}>
 						<img
-							src={dashboard}
+							src={jaysBank}
 							alt="my-work"
 							className="object-cover transition-all duration-[0.5s]"
 						/>
 						<div className={wrapperStyle}>
-							<p>A Modern Admin-Dashboard</p>
+							<p>A Modern Bank Website</p>
 						</div>
 					</a>
 					<a
