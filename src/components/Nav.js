@@ -25,7 +25,7 @@ function Nav() {
 	window.addEventListener("scroll", changeNavColor);
 
 	const linkStyle =
-		"text-[1.4rem] xl:text-[1.6rem] 2xl:text-[2rem] px-[3rem] sm:px-0 cursor-pointer text-white transition-all hover:text-[var(--accent-color)]";
+		"text-[1.4rem] xl:text-[1.6rem] 2xl:text-[2rem] px-[4.5rem] sm:px-0 cursor-pointer text-white transition-all hover:text-[var(--accent-color)]";
 	const modalSpan =
 		"hidden sm:block absolute bg-white top-[200%] left-[-90%] text-[1.2rem] xl:text-[1.4rem] 2xl:text-[1.9rem] px-4 py-2 rounded-[4px]";
 	return (
@@ -57,7 +57,7 @@ function Nav() {
 					</div>
 
 					<ul
-						className={`h-[100vh] z-20 fixed left-0 top-0 bg-black sm:bg-transparent w-[40%] pt-[5rem] sm:pt-[0rem] sm:static sm:h-full sm:w-full flex flex-col sm:flex-row sm:items-center gap-[3rem] sm:gap-[2.5rem] lg:gap-[4.5rem] xl:gap-[5rem] 2xl:gap-[8rem] sm:translate-x-0 transition-all sm:transition-none ${
+						className={`h-[100vh] z-20 fixed left-0 top-0 bg-black sm:bg-transparent w-[50%] pt-[7rem] sm:pt-[0rem] sm:static sm:h-full sm:w-full flex flex-col sm:flex-row sm:items-center gap-[3rem] sm:gap-[2.5rem] lg:gap-[4.5rem] xl:gap-[5rem] 2xl:gap-[8rem] sm:translate-x-0 transition-all sm:transition-none ${
 							displayMenu
 								? "translate-x-0"
 								: "translate-x-[-100%]"
@@ -199,7 +199,7 @@ function Nav() {
 			{displayMenu && (
 				<div
 					onClick={() => setDisplayMenu(false)}
-					className={`fixed top-0 left-0 w-full h-screen bg-[rgba(0,0,0,0.5)] z-10 ${
+					className={`fixed top-0 left-0 w-full h-screen bg-[rgba(0,0,0,0.7)] z-10 ${
 						displayMenu ? "opacity-1" : "opacity-0"
 					} `}
 				/>

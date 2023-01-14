@@ -1,14 +1,17 @@
 import React, { Fragment, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { MdLocationOn, MdEmail } from "react-icons/md";
+import Loader from "./Loader";
 
 function Contact() {
 	const form = useRef();
 	const [modal, setModal] = useState(false);
 	const [message, setMessage] = useState("");
+	const [loading, setLoading] = useState(false);
 
 	const handleForm = (e) => {
 		e.preventDefault();
+		setLoading(true);
 
 		emailjs
 			.sendForm(
@@ -23,20 +26,23 @@ function Contact() {
 					setMessage(
 						"Message sent successfully, you will be contacted shortly",
 					);
+					setLoading(false);
 					setModal(true);
 				},
 				(error) => {
 					setMessage("Message Failed, Try Again");
+					setLoading(false);
 					setModal(true);
 				},
 			);
 	};
 
 	const inputStyle =
-		"h-[3rem] sm:h-[4.5rem] xl:h-[5rem] 2xl:h-[6.5rem] px-[1rem] xl:px-[1.5rem] 2xl:px-[2rem] w-full border-[var(--light-gray-color)] outline-0 border-solid border-[1px] hover:border-gray-400 focus:border-[2px] focus:border-[var(--accent-color)]";
+		"h-[3.5rem] sm:h-[4.5rem] xl:h-[5rem] 2xl:h-[6.5rem] px-[1rem] xl:px-[1.5rem] 2xl:px-[2rem] w-full border-[var(--light-gray-color)] outline-0 border-solid border-[1px] hover:border-gray-400 focus:border-[2px] focus:border-[var(--accent-color)]";
 
 	return (
 		<Fragment>
+			{loading && <Loader />}
 			<section
 				className="mt-[6rem] sm:mt-[8rem] py-[6rem] sm:py-[8rem] xl:py-[9rem] 2xl:py-[11rem] bg-[var(--section-color)]"
 				name="contact">
@@ -70,7 +76,7 @@ function Contact() {
 							ref={form}
 							onSubmit={handleForm}
 							className="lg:w-full flex flex-col gap-[2rem] sm:gap-[3rem] xl:gap-[3.5rem] 2xl:gap-[4.5rem] text-[1.2rem] sm:text-[1.6rem] lg:text-[1.4rem] xl:text-[1.6rem] 2xl:text-[2rem]">
-							<div className="flex gap-[2rem] sm:gap-[3rem] xl:gap-[3.5rem] 2xl:gap-[5rem]">
+							<div className="flex gap-[1rem] sm:gap-[2rem] xl:gap-[3.5rem] 2xl:gap-[5rem]">
 								<input
 									type="text"
 									placeholder="Name"
@@ -97,7 +103,7 @@ function Contact() {
 							<textarea
 								placeholder="Type message..."
 								name="message"
-								className="h-[10rem] sm:h-[15rem] xl:h-[18rem] 2xl:h-[23rem] resize-none p-[1rem] xl:p-[1.5rem] 2xl:p-[2rem] w-full border-[var(--light-gray-color)] border-solid border-[1px] outline-0 hover:border-gray-400 focus:border-[2px] focus:border-[var(--accent-color)]"
+								className="h-[13rem] sm:h-[16rem] xl:h-[18rem] 2xl:h-[23rem] resize-none p-[1rem] xl:p-[1.5rem] 2xl:p-[2rem] w-full border-[var(--light-gray-color)] border-solid border-[1px] outline-0 hover:border-gray-400 focus:border-[2px] focus:border-[var(--accent-color)]"
 								required
 							/>
 

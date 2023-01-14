@@ -78,3 +78,25 @@
   border-radius: 8px;
   width: 100%;
 }
+
+.custom-loader {
+  animation: s4 4s infinite;
+}
+.custom-loader::before,
+.custom-loader::after {    
+  content:"";
+  grid-area: 1/1;
+  border:1.5rem solid;
+  border-radius: 50%;
+  border-color:#7DD9EE #7DD9EE #ffffff #ffffff;
+  mix-blend-mode: darken;
+  animation: s4 1.4s infinite linear;
+}
+.custom-loader::after {
+  border-color:#7DD9EE #7DD9EE ffff ffff;
+  animation-direction: reverse;
+}
+
+@keyframes s4{ 
+  100%{transform: rotate(1turn)}
+}

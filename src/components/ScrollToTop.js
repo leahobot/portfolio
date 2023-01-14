@@ -34,7 +34,7 @@ const ScrollToTop = () => {
 				<BiChevronUp className="text-white text-[3rem] sm:text-[4rem] lg:text-[3rem] xl:text-[4.5rem] 2xl:text-[6rem]" />
 			</button>
 
-			<span className="hidden group-hover:inline fixed right-[20%] sm:right-[17%] lg:right-[12%] xl:right-[14%] 2xl:right-[12.5%] bottom-[5.5%] z-10 text-[1rem] sm:text-[1.4rem] lg:text-[1.2rem] xl:text-[1.5rem] 2xl:text-[1.9rem] px-[1rem] py-[0.6rem] sm:py-[0.8rem] lg:py-[0.6rem] xl:py-[0.8rem] 2xl:py-[1.2rem] sm:px-[1.3rem] lg:px-[1rem] xl:px-[1.3rem] 2xl:px-[1.7rem] bg-black text-white rounded-[0.5rem] sm:rounded-[0.7rem] lg:rounded-[0.5rem] xl:rounded-[0.7rem] 2xl:rounded-[1rem] after:absolute after:right-[-19%] sm:after:right-[-15%] sm:after:top-[25%] lg:after:right-[-17%] xl:after:right-[-15%] 2xl:after:right-[-17%] after:border-l-black after:border-[8px] 2xl:after:border-[12px] after:border-solid after:border-y-transparent after:border-r-transparent">
+			<span className="hidden lg:group-hover:inline fixed right-[20%] sm:right-[17%] lg:right-[12%] xl:right-[14%] 2xl:right-[12.5%] bottom-[5.5%] z-10 text-[1rem] sm:text-[1.4rem] lg:text-[1.2rem] xl:text-[1.5rem] 2xl:text-[1.9rem] px-[1rem] py-[0.6rem] sm:py-[0.8rem] lg:py-[0.6rem] xl:py-[0.8rem] 2xl:py-[1.2rem] sm:px-[1.3rem] lg:px-[1rem] xl:px-[1.3rem] 2xl:px-[1.7rem] bg-black text-white rounded-[0.5rem] sm:rounded-[0.7rem] lg:rounded-[0.5rem] xl:rounded-[0.7rem] 2xl:rounded-[1rem] after:absolute after:right-[-19%] sm:after:right-[-15%] sm:after:top-[25%] lg:after:right-[-17%] xl:after:right-[-15%] 2xl:after:right-[-17%] after:border-l-black after:border-[8px] 2xl:after:border-[12px] after:border-solid after:border-y-transparent after:border-r-transparent">
 				Back to Top
 			</span>
 		</div>
