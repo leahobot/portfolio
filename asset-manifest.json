@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0f6b70ad.css",
-    "main.js": "/portfolio/static/js/main.9ef99cc0.js",
+    "main.js": "/portfolio/static/js/main.1e75a03e.js",
     "static/js/787.128fc6e9.chunk.js": "/portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/hero.jpg": "/portfolio/static/media/hero.64df6f405733aee1fe05.jpg",
+    "static/media/fitMe.png": "/portfolio/static/media/fitMe.156f7c105d79852ae2c0.png",
     "static/media/fruitHub.webp": "/portfolio/static/media/fruitHub.14165021ef12c14c7fb0.webp",
     "static/media/jaysBank.webp": "/portfolio/static/media/jaysBank.61c77eb81449460abb11.webp",
-    "static/media/text2speech.webp": "/portfolio/static/media/text2speech.42b06278c5df083e72be.webp",
     "static/media/cleanax.png": "/portfolio/static/media/cleanax.a4b849571c99a8ab6711.png",
     "static/media/image.jpg": "/portfolio/static/media/image.cda36762e0eb1592c86f.jpg",
     "static/media/jaysStore.webp": "/portfolio/static/media/jaysStore.d5187982437130468c45.webp",
     "index.html": "/portfolio/index.html",
     "main.0f6b70ad.css.map": "/portfolio/static/css/main.0f6b70ad.css.map",
-    "main.9ef99cc0.js.map": "/portfolio/static/js/main.9ef99cc0.js.map",
+    "main.1e75a03e.js.map": "/portfolio/static/js/main.1e75a03e.js.map",
     "787.128fc6e9.chunk.js.map": "/portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0f6b70ad.css",
-    "static/js/main.9ef99cc0.js"
+    "static/js/main.1e75a03e.js"
   ]
 }
