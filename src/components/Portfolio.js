@@ -2,7 +2,7 @@ import React from "react";
 import jaysBank from "../images/jaysBank.webp";
 import cleanax from "../images/cleanax.png";
 import jaysStore from "../images/jaysStore.webp";
-import textSpeech from "../images/text2speech.webp";
+import fitMe from "../images/fitMe.png";
 import fruitHub from "../images/fruitHub.webp";
 
 function Portfolio() {
@@ -55,7 +55,7 @@ function Portfolio() {
 							className={image}
 						/>
 						<div className={wrapperStyle}>
-							<p>Highly Responsive Ecommerce Website</p>
+							<p>An Online Store</p>
 						</div>
 					</a>
 					<a
@@ -89,18 +89,18 @@ function Portfolio() {
 						</div>
 					</a>
 					<a
-						href="https://leahobot.github.io/Text-to-Speech-App/"
+						href="https://fitme.pages.dev/"
 						alt="my-work"
 						target="_blank"
 						rel="noreferrer"
 						className={`${imageBoxStyle} w-[100%]`}>
 						<img
-							src={textSpeech}
+							src={fitMe}
 							alt="my-work"
 							className={image}
 						/>
 						<div className={wrapperStyle}>
-							<p>A Text-to-Speech Web Application</p>
+							<p>A Fitness Gym Website</p>
 						</div>
 					</a>
 				</main>
