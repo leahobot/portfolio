@@ -18,7 +18,7 @@ function Home() {
 			name="home">
 			<main className="flex flex-col gap-[3rem] sm:gap-[4rem] lg:gap-[2rem] xl:gap-[3rem] 2xl:gap-[4rem] w-full h-full items-center text-white pt-[40%] sm:pt-[30%] lg:pt-[10%] xl:pt-[15%] 2xl:pt-[10%]">
 				<p className="text-[1.6rem] sm:text-[2.2rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2.5rem] font-medium">
-					Welcome
+					Welcome..
 				</p>
 				<div className="w-[90%] sm:w-[70%] mt-[2rem] sm:mt-[6rem] lg:mt-[3rem] lg:w-[80%] xl:w-[60%] 2xl:w-[40%] h-[20rem] sm:h-[25rem] lg:h-[20rem] 2xl:h-[35rem] text-center font-bold text-[4rem] sm:text-[6.5rem] lg:text-[4.5rem] xl:text-[5.5rem] 2xl:text-[8rem]">
 					<Typewriter
