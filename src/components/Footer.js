@@ -1,9 +1,13 @@
 import React from "react";
+import { useStateContext } from "../context/ContextProvider";
 
 function Footer() {
 	const year = new Date().getFullYear();
+	const { activeTheme } = useStateContext();
+	const activeSection =  activeTheme === 'dark' ? 'bg-[rgb(9,14,22)] text-[#bdbdbd]' : 'bg-white text-gray-400'
+	
 	return (
-		<footer className="mt-[6rem] mb-[2rem] sm:mt-[8rem] xl:mt-[9rem] 2xl:mt-[11rem] text-[1.2rem] sm:text-[1.6rem] lg:text-[1.4rem] xl:text-[1.6rem] 2xl:text-[2rem] flex flex-col justify-center w-full text-center bg-white text-gray-400">
+		<footer className={`${activeSection} pb-[2rem] pt-[9rem] text-[1.4rem] lg:text-[1.6rem] flex flex-col justify-center w-full text-center`}>
 			<a
 				className="hover:text-[var(--accent-hover-color)]"
 				href="https://github.com/leahobot"

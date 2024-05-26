@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import logo from "../images/logo.png";
 import { AiOutlineMenu } from "react-icons/ai";
-import { BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
+import { useStateContext } from "../context/ContextProvider";
+import { BsLinkedin, BsGithub, BsInstagram, BsMoonStarsFill } from "react-icons/bs";
+import { FiSun } from "react-icons/fi";
 import { Link } from "react-scroll";
 
 const initialState = {
@@ -12,30 +14,19 @@ const initialState = {
 
 function Nav() {
 	const [modal, setModal] = useState(initialState);
-	const [bgColor, setBgColor] = useState(false);
 	const [displayMenu, setDisplayMenu] = useState(false);
+	const { activeTheme, setTheme, activeColor } = useStateContext();
 
-	const changeNavColor = () => {
-		if (window.scrollY >= 80) {
-			setBgColor(true);
-		} else {
-			setBgColor(false);
-		}
-	};
-	window.addEventListener("scroll", changeNavColor);
-
-	const linkStyle =
-		"text-[1.4rem] xl:text-[1.6rem] 2xl:text-[2rem] px-[4.5rem] sm:px-0 cursor-pointer text-white transition-all hover:text-[var(--accent-color)]";
+	const linkStyle = ['text-[1.3rem] lg:text-[1.6rem]', 'cursor-pointer', 'transition', 'hover:text-[var(--accent-color)]', activeColor].join(' ');
 	const modalSpan =
-		"hidden sm:block absolute bg-white top-[200%] left-[-90%] text-[1.2rem] xl:text-[1.4rem] 2xl:text-[1.9rem] px-4 py-2 rounded-[4px]";
+		"hidden sm:block absolute bg-white top-[200%] left-[-90%] text-[1.4rem] px-4 py-2 rounded-[4px]";
+	const headerClasses = ['h-[8rem]','w-full','z-20','fixed','inset-0','animate__animated',
+		activeTheme === 'dark' ? 'bg-black' : 'light-header',
+	].join(' ');
+		
 	return (
-		<nav
-			className={`h-[7rem] sm:h-[8rem] lg:h-[6.5rem] xl:h-[8rem] 2xl:h-[10rem] z-20 fixed top-0 w-full ${
-				bgColor
-					? "bg-black animate__animated animate__slideInDown "
-					: ""
-			}`}>
-			<div className="h-full flex items-center justify-between max-w-[90%] lg:max-w-[80%] mx-auto my-0">
+		<header className={headerClasses} >
+			<nav className="h-full flex items-center justify-between max-w-[90%] lg:max-w-[80%] mx-auto my-0">
 				<Link
 					to="home"
 					spy={true}
@@ -53,11 +44,11 @@ function Nav() {
 					<div
 						className="sm:hidden ml-[10rem] mt-[0.4rem]"
 						onClick={() => setDisplayMenu(true)}>
-						<AiOutlineMenu className="text-[3rem] cursor-pointer text-white" />
+						<AiOutlineMenu className={`${activeColor} text-[2.2rem]`} />
 					</div>
 
 					<ul
-						className={`h-[100vh] z-20 fixed left-0 top-0 bg-black sm:bg-transparent w-[50%] pt-[7rem] sm:pt-[0rem] sm:static sm:h-full sm:w-full flex flex-col sm:flex-row sm:items-center gap-[3rem] sm:gap-[2.5rem] lg:gap-[4.5rem] xl:gap-[5rem] 2xl:gap-[8rem] sm:translate-x-0 transition-all sm:transition-none ${
+						className={`h-[100vh] z-20 fixed inset-0 bg-black sm:bg-transparent w-[50%] pt-[7rem] pl-[3rem] sm:pl-0 sm:pt-0 sm:static sm:h-full sm:w-full flex flex-col sm:flex-row sm:items-center gap-[2.5rem] md:gap-[4rem] lg:gap-[5rem]  sm:translate-x-0 transition-all sm:transition-none ${
 							displayMenu
 								? "translate-x-0"
 								: "translate-x-[-100%]"
@@ -114,18 +105,6 @@ function Nav() {
 							<Link
 								onClick={() => setDisplayMenu(false)}
 								className={linkStyle}
-								to="resume"
-								spy={true}
-								smooth={true}
-								offset={-80}
-								duration={800}>
-								Resume
-							</Link>
-						</li>
-						<li>
-							<Link
-								onClick={() => setDisplayMenu(false)}
-								className={linkStyle}
 								to="contact"
 								spy={true}
 								smooth={true}
@@ -137,7 +116,7 @@ function Nav() {
 					</ul>
 				</div>
 
-				<ul className="h-full flex items-center gap-[1.8rem] sm:gap-[2.3rem] xl:gap-[2.6rem] 2xl:gap-[3.5rem]">
+				<ul className="h-full flex items-center gap-[1.8rem] md:gap-[2.6rem]">
 					<li
 						className="relative"
 						onMouseEnter={() =>
@@ -150,7 +129,7 @@ function Nav() {
 							href="https://linkedin.com/in/leahobot"
 							target="_blank"
 							rel="noreferrer">
-							<BsLinkedin className="text-white text-[2.4rem] sm:text-[2.2rem] xl:text-[2.5rem] 2xl:text-[3rem]" />
+							<BsLinkedin className={`${activeColor} text-[2rem] md:text-[2.4rem]`} />
 						</a>
 						{modal.linkedIn && (
 							<span className={modalSpan}>Linkedin</span>
@@ -169,7 +148,7 @@ function Nav() {
 							href="https://github.com/leahobot"
 							target="_blank"
 							rel="noreferrer">
-							<BsGithub className="text-white text-[2.4rem] sm:text-[2.2rem] xl:text-[2.5rem] 2xl:text-[3rem]" />
+							<BsGithub className={`${activeColor} text-[2rem] md:text-[2.4rem]`} />
 						</a>
 						{modal.gitHub && (
 							<span className={modalSpan}>Github</span>
@@ -188,24 +167,44 @@ function Nav() {
 							href="https://www.instagram.com/leahobot/"
 							target="_blank"
 							rel="noreferrer">
-							<BsInstagram className="text-white text-[2.4rem] sm:text-[2.2rem] xl:text-[2.5rem] 2xl:text-[3rem]" />
+							<BsInstagram className={`${activeColor} text-[2rem] md:text-[2.4rem]`} />
 						</a>
 						{modal.instagram && (
 							<span className={modalSpan}>Instagram</span>
 						)}
 					</li>
+					<li className="ml-4 lg:ml-8 cursor-pointer active:translate-y-1 transition">
+						{activeTheme === 'dark' ?
+							<BsMoonStarsFill onClick={() => setTheme('light')} className="text-[var(--accent-color)] text-[1.6rem] md:text-[2rem]" /> :
+							<FiSun onClick={() => setTheme('dark')} className="text-[#141414] text-[1.6rem] md:text-[2rem]" />
+						}
+					</li>
 				</ul>
-			</div>
+
+			</nav>
 			{displayMenu && (
 				<div
 					onClick={() => setDisplayMenu(false)}
-					className={`fixed top-0 left-0 w-full h-screen bg-[rgba(0,0,0,0.7)] z-10 ${
+					className={`fixed inset-0 w-full h-screen bg-[rgba(0,0,0,0.7)] z-10 ${
 						displayMenu ? "opacity-1" : "opacity-0"
 					} `}
 				/>
 			)}
-		</nav>
+		</header>
 	);
 }
 
 export default Nav;
+
+// <li>
+// <Link
+// 	onClick={() => setDisplayMenu(false)}
+// 	className={linkStyle}
+// 	to="resume"
+// 	spy={true}
+// 	smooth={true}
+// 	offset={-80}
+// 	duration={800}>
+// 	Resume
+// </Link>
+// </li>

@@ -17,68 +17,41 @@
 .active{
   color:var(--accent-color);
 }
-
-.hero-page::before{
-  content:"";
+.remove-pointer{
+  pointer-events: none;
+}
+.light-header {
+  background-color: #f0f0f04b;
+  border-bottom: 1px solid #e3e3e3;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+.skills-box {
+  overflow: hidden;
+  background-color: #7dd9ee19;
+  backdrop-filter: blur(20px);
+}
+.blur-filter {
+  backdrop-filter: blur(5px);
+}
+.hero-page{
   background-image: url(./images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  left: 0;
 }
 
 .photo{
-  border-radius: 1px;
-  outline: 0.2rem solid var(--light-gray-color);
-  outline-offset: 0.5rem;
+  border-radius: 50%;
+  outline: 2rem solid #EAEAEB;
   transition: all 0.8s ease;
 }
 
 .photo:hover{
-  outline-offset: 1rem;
+  outline-offset: 0.5rem;
   transform: scale(1.02);
-  outline: 0.3rem solid var(--accent-color);
+  outline: 2rem solid var(--accent-color);
 }
-
-.photo img:hover{
-  filter: grayscale(0) sepia(0);
-  -webkit-filter: grayscale(0) sepia(0);
-  -moz-filter: grayscale(0) sepia(0);
-}
-
-.progress {
-  -webkit-appearance: none;
-  background-color: var(--accent-color);
-  border-radius: 5px;
-  height: 0.8rem;
-  width: 100%;
-}
-.progress::-webkit-progress-bar {
- -webkit-appearance: none;
-  background-color: var(--light-gray-color);
-  border-radius: 5px;
-  height: 0.8rem;
-   width: 100%;
-}
-.progress::-webkit-progress-value {
-  -webkit-appearance: none;
-  background-color: var(--accent-color);
-  border-radius: 8px;
-  height: 0.8rem;
-}
-  .progress::-moz-progress-bar {
-  -webkit-appearance: none;
-  background-color: var(--accent-color);
-  height: 0.8rem;
-  border-radius: 8px;
-  width: 100%;
-}
-
 .custom-loader {
   animation: s4 4s infinite;
 }
